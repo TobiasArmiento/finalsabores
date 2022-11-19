@@ -262,4 +262,22 @@ footer{
         transition-property: all;
         transition-duration: 0.5s;
     }
+
+    .datosFooter{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5% 30px 5%;
+    }
+
+    #img-pagos{
+        height: 22px;
+    }
+
+    .sectionFooter{
+        flex-direction: column;
+    }
+
+    .horarios{
+        font-size: 1.2em;
+    }
 }
