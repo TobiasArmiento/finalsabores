@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="listaHeader">
             <img class="logo" src="./img/LOGO NUEVO SABORES.jpg" alt="Logo empresa Sabores Creativos">
             <nav>
                 <ul>
@@ -18,6 +18,7 @@
                     </li>
                     <li class="listaPrincipal">
                         <a href="">Productos</a>
+                        <!-- MENU DESPLEGABLE -->
                         <ul>
                             <li class="listaProductos"><a href="./sections/Productos/Uso Industrial.html">Uso Industrial</a></li>
                             <li class="listaProductos"><a href="./sections/Productos/Reposteria.html">Repostería/Uso Doméstico</a></li>
@@ -35,9 +36,9 @@
                     </li>
                 </ul>
                 <form action="">
-                    <input type="search" placeholder="Buscar Producto">
+                    <input class="buscador" type="search" placeholder="Buscar Producto">
                     <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                           </svg>
                     </button>
@@ -51,19 +52,19 @@
             <img class="imgEmpresa" src="./img/empresa2.jpg" alt="comidas dulces">
         </div>
         <div class="datosImportantes">
-            <div>
+            <div class="box box2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
                     <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                   </svg>
                 <p class="shipping">Realizamos Envios a <strong>todo el pais!</strong></p>
             </div>
-            <div>
+            <div class="box box2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                   </svg>
                 <p class="shopping">Monto mínimo de compra <strong>flexible</strong></p>
                 </div>
-            <div>
+            <div class="box box2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
                     <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
@@ -71,38 +72,44 @@
                 <p class="card">Pagá con <strong>MercadoPago</strong>, <strong>Efectivo</strong> o <strong>Trasferecia Bancaria</strong></p>
                 </div>
         </div>
-        <div  class="nuestrosProductos">
+        <div class="nuestrosProductos">
             <h1>Sobre Nuestros Productos</h1>
             <p> <strong>Fabricamos</strong> una gran variedad de sabores únicos tanto <strong>dulces</strong> como <strong>salados</strong> de excelente calidad. Colorantes <strong>liquidos</strong>, en <strong>pasta</strong> y en <strong>polvo</strong>.</p>
         </div>
-        <div>
-            <nav>
+        <div  class="navProductos">
+            <nav class="navProductos">
+                <h2>Conocé Nuestros Productos</h2>
                 <ul class="conoceProductos">
-                    <h2>Conocé Nuestros Productos</h2>
-                    <li class="conoceProductos">
-                        <a class="textProductos" href=""><img class="imgProductos" src="./img/planta de produccion.jpg" alt="">Uso Industrial</a>
+                    <li class="box box2">
+                        <a class="textProductos" href=""><img class="imgProductos" src="./img/planta de produccion.jpg" alt="exterior de planta de produccion"><strong>Uso Industrial</strong></a>
                     </li>
-                    <li class="conoceProductos">
-                        <a class="textProductos" href=""><img class="imgProductos" src="./img/reposteria-domestica.jpg" alt="">Repostería / Uso doméstico</a>
+                    <li class="box box2">
+                        <a class="textProductos" href=""><img class="imgProductos" src="./img/reposteria-domestica.jpg" height="174.75" alt="muffins coloridos"><strong>Repostería / Uso doméstico</strong></a>
                     </li>
-                    <li class="conoceProductos">
-                        <a class="textProductos" href=""><img class="imgProductos" src="./img/local alta temperatura.jpeg" alt="">Altas Temperaturas</a>
+                    <li class="box box2">
+                        <a class="textProductos" href=""><img class="imgProductos" src="./img/local alta temperatura.jpeg" alt="interior cafeteria"><strong>Altas Temperaturas</strong></a>
                     </li>
-                    <li class="conoceProductos">
-                        <a class="textProductos" href=""><img class="imgProductos" src="./img/Otros.jpg" alt="">Otros</a>
+                    <li class="box box2">
+                        <a class="textProductos" href=""><img class="imgProductos" src="./img/Otros.jpg" alt="untando dulce de leche"><strong>Otros</strong></a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <h2>Los mas Elegidos</h2>
+        <h2>Los mas Elegidos</h2>
+        <div class="imgElegidos">
             <div class="imgElegidos">
+                <div class="imgMasElegidos box box2">
                 <img src="./img/banana 110.png" alt="frasco sabor banana de 110cc">
                 <h3>Banana 110cc</h3>
-                <img src="./img/vainilla 110.png" alt="frasco sabor vainilla de 110cc">
+                </div>
+                <div class="imgMasElegidos box box2">
+                <img class="imgMasElegidos" src="./img/vainilla 110.png" alt="frasco sabor vainilla de 110cc">
                 <h3>Vainilla 110cc</h3>
-                <img src="./img/maracuya 35cc.png" alt="frasco sabor maracuya 35cc">
+                </div>
+                <div class="imgMasElegidos box box2">
+                <img class="imgMasElegidos" src="./img/maracuya 35cc.png" alt="frasco sabor maracuya 35cc">
                 <h3>Maracuya 35cc</h3>
+                </div>
             </div>
         </div>
     </main>

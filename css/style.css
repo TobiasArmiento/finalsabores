@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* media mobile 0-500px */
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Domine', serif;
     font-family: 'Montserrat', sans-serif;
 }
-
-/* media mobile 0-500px */
 
 html{
     font-size: 62.5%;
@@ -57,7 +57,7 @@ a{
     margin-bottom: 30px;
 }
 
-.datosImportantes, .conoceProductos{
+.datosImportantes{
     margin: 70px 0px 100px 0px;
     color: #F27141;
 }
@@ -73,8 +73,14 @@ h1, h2 {
     color: #F27141;
 }
 
-.imgProductos, .imgElegidos{
-    border: 3px solid #304642;
+.conoceProductos, .imgElegidos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgProductos, .imgMasElegidos{
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -128,8 +134,132 @@ footer{
     color: white;
 }
 
-@media (min-width:500px){
 
+
+@media(min-width:500px){
+    header{
+        grid-area: header;
+    }
+
+    .listaHeader{
+        grid-area: listaHeader;
+    }
+
+    .imgEmpresa{
+        grid-area: imgEmpresa;
+    }
+
+    .datosImportantes{
+        grid-area: datosImportantes;
+    }
+
+    .nuestrosProductos{
+        grid-area: nuestrosProductos;
+    }
+
+    .conoceProductos{
+        grid-area: conoceProductos;
+    }
+
+    .imgElegidos{
+        grid-area: imgElegidos;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header            header"
+        "imgEmpresa        imgEmpresa"
+        "datosImportantes  datosImportantes"
+        "datosImportantes  datosImportantes"
+        "datosImportantes  datosImportantes"
+        "nuestrosProductos nuestrosProductos"
+        "nuestrosProductos nuestrosProductos"
+        "conoceProductos   conoceProductos"
+        "conoceProductos   conoceProductos"
+        "imgElegidos       imgElegidos"
+        "imgElegidos       imgElegidos"
+        "imgElegidos       imgElegidos"
+        "footer            footer";
+        grid-template-columns: 1fr;
+    }
+
+    nav, ul, form{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .buscador{
+        width: 100px;
+        height: 23px;
+    }
 }
 
 
+@media(min-width:810px){
+    body{
+        grid-template-areas: 
+        "header"
+        "imgEmpresa"
+        "datosImportantes"
+        "nuestrosProductos"
+        "conoceProductos"
+        "conoceProductos"
+        "imgElegidos"
+        "footer";
+    }
+
+    .logo, .listaHeader{
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    form{
+        margin-bottom: 1em;
+    }
+
+    .datosImportantes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 150px;
+    }
+
+    .nuestrosProductos{
+        margin-bottom: 5em;
+    }
+
+    .navProductos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conoceProductos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10em;
+    }
+
+    .imgProductos{
+        border: 3px solid #304642;
+    }
+
+    .imgMasElegidos{
+        width: 250px;
+    }
+
+    .box:hover{
+        transform: scale(1.2);
+    }
+
+    .box2{
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
