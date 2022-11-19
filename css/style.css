@@ -188,16 +188,17 @@ footer{
         grid-template-columns: 1fr;
     }
 
-    nav, ul, form{
+    ul{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
     }
 
     .buscador{
-        width: 100px;
+        width: 200px;
         height: 23px;
     }
+    
 }
 
 
@@ -218,10 +219,6 @@ footer{
         display: flex;
         justify-content: center;
         gap: 1em;
-    }
-
-    form{
-        margin-bottom: 1em;
     }
 
     .datosImportantes{
@@ -279,5 +276,16 @@ footer{
 
     .horarios{
         font-size: 1.2em;
+    }
+
+    nav, form{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 1em;
+    }
+
+    .logo{
+        height: 65px;
     }
 }
