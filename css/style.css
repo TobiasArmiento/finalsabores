@@ -457,6 +457,39 @@ p strong{
         width: 420px;
         text-align: start;
     }
-
     
+    .cuerpoContacto{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formularioContacto, .nombreApellido{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rubro1, .rubro2, .celular1, .celular2{
+        margin: 5px 10px 5px 0px;
+    }
+    
+    .tipo1, .tipo2{
+        margin: 5px 50px 5px 0px;
+    }
+
+    .rubro2, .tipo2, .nombreApellido2, .celular2, .textoArea1{
+        width: 350px;
+    }
+
+    .contactoExtra{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .listMaps{
+        margin: -15px;
+    }
+
 }
