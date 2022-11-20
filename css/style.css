@@ -145,7 +145,37 @@ footer{
     color: white;
 }
 
+.dondeEstamos{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 100px;
+}
 
+.listMaps{
+    list-style-type: none;
+}
+
+.fabricaRetiro{
+    font-size: 19px;
+    margin-top: 50px;
+}
+
+.puntoRetiro{
+    padding-top: 80px;
+}
+
+.imgFabrica{
+    border: 1px solid #304642;
+}
+
+.listMaps:hover{
+    transform: scale(1.2);
+}
+
+.listMaps2{
+    transition-property: all;
+    transition-duration: 0.5s;
+}
 
 @media(min-width:500px){
     header{
@@ -209,7 +239,13 @@ footer{
         width: 200px;
         height: 23px;
     }
-    
+
+    .mapsFabrica{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 }
 
 
@@ -311,34 +347,23 @@ footer{
         padding-right: 110px;
     }
 
-    .dondeEstamos{
-        font-weight: 700;
-        margin-bottom: 100px;
-    }
-
     .imgFabrica, .imgRetiro{
-        width: 60%;
+        width: 400px;
         border: 1px solid #304642;
     }
 
     .mapsFabrica, .mapsRetiro{
-        display: flex;
-        justify-content: space-evenly;
         align-items: center;
         margin-bottom: 100px;
     }
 
-    .listMaps{
-        list-style-type: none;
-    }
-
-    .todoFabrica, .puntoRetiro{
-        display: flex;
-        flex-direction: column;
-    }
-
     .fabricaRetiro{
         margin-top: -70px;
+        font-size: 27px;
+    }
+
+    .dondeEstamos{
+        font-size: 30px;
     }
     
 }
