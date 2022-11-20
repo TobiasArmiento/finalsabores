@@ -145,7 +145,7 @@ footer{
     color: white;
 }
 
-.dondeEstamos, .h1Nosotros{
+.dondeEstamos, .h1Nosotros, .contacto{
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 100px;
@@ -193,14 +193,41 @@ p strong{
     color: #304642;
 }
 
-.nosotros{
+.nosotros, .todoContacto, .textoArea{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.textoArea1{
+    width: 250px;
+}
 
+.nombreApellido, .nombreApellido1, .nombreApellido2, .textoArea{
+    margin: 5px 20px 10px 5px;
+}
+
+.rubro1, .rubro2, .celular1, .celular2{
+    margin: 5px 39px 5px 25px;
+}
+
+.tipo1, .tipo2{
+    margin: 5px 79px 5px 16px;
+}
+
+.verificacion{
+    margin: 5px;
+}
+
+.enviar{
+    padding: 2px 10px 2px 10px;
+}
+
+.logoNumero, .contactoExtra{
+    margin: 25px;
+    text-align: start;
+}
 
 
 @media(min-width:500px){
@@ -271,7 +298,6 @@ p strong{
         flex-direction: row;
         justify-content: space-evenly;
     }
-
 }
 
 @media(min-width:645px){
@@ -283,6 +309,23 @@ p strong{
     .parrafoNosotros{
         width: 280px;
         font-size: 9px;
+    }
+
+    .cuerpoContacto{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nombreApellido, .nombreApellido1, .nombreApellido2, .textoArea{
+        margin: 5px;
+    }
+    
+    .rubro1, .rubro2, .celular1, .celular2{
+        margin: 5px 10px 5px 25px;
+    }
+    
+    .tipo1, .tipo2{
+        margin: 5px 50px 5px 15px;
     }
 }
 
@@ -415,8 +458,5 @@ p strong{
         text-align: start;
     }
 
-    .nosotros{
-        margin-bottom: ;
-    }
     
 }
