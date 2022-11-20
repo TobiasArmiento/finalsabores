@@ -391,7 +391,7 @@ p strong{
         border: 1px solid #304642;
     }
 
-    .mapsFabrica, .mapsRetiro{
+    .mapsFabrica, .mapsRetiro, .nosotros{
         align-items: center;
         margin-bottom: 100px;
     }
@@ -401,8 +401,22 @@ p strong{
         font-size: 27px;
     }
 
-    .dondeEstamos{
+    .dondeEstamos, .h1Nosotros{
         font-size: 30px;
+    }
+
+    .imgNosotros{
+        width: 445px;
+    }
+
+    .parrafoNosotros{
+        font-size: 12px;
+        width: 420px;
+        text-align: start;
+    }
+
+    .nosotros{
+        margin-bottom: ;
     }
     
 }
