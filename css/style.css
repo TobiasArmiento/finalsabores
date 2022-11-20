@@ -145,7 +145,7 @@ footer{
     color: white;
 }
 
-.dondeEstamos{
+.dondeEstamos, .h1Nosotros{
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 100px;
@@ -164,7 +164,7 @@ footer{
     padding-top: 80px;
 }
 
-.imgFabrica{
+.imgFabrica, .imgNosotros{
     border: 1px solid #304642;
 }
 
@@ -175,6 +175,29 @@ footer{
 .listMaps2{
     transition-property: all;
     transition-duration: 0.5s;
+}
+
+.imgNosotros{
+    width: 350px;
+}
+
+.parrafoNosotros{
+    margin-top: 20px;
+    width: 300px;
+    font-size: 10px;
+    color: #304642;
+}
+
+p strong{
+    font-weight: 700;
+    color: #304642;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(min-width:500px){
@@ -265,6 +288,7 @@ footer{
     .logo, .listaHeader{
         display: flex;
         justify-content: center;
+        align-items: baseline;
         gap: 1em;
     }
 
