@@ -145,7 +145,7 @@ footer{
     color: white;
 }
 
-.dondeEstamos, .h1Nosotros, .contacto{
+.dondeEstamos, .h1Nosotros, .contacto, .h1Productos, .h2Productos, .masElegidos{
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 100px;
@@ -444,7 +444,7 @@ p strong{
         font-size: 27px;
     }
 
-    .dondeEstamos, .h1Nosotros{
+    .dondeEstamos, .h1Nosotros, .contacto{
         font-size: 30px;
     }
 
