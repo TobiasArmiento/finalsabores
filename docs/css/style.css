@@ -21,7 +21,7 @@ body{
 }
 
 .logo{
-  width: 15em;
+  width: 20em;
 }
 
 ul li, a{
@@ -43,6 +43,7 @@ ul li, a{
 #hamburger{
   display: flex;
   justify-content: end;
+  margin-top: 11.5px;
 }
 
 header, .dropdown-menu-light{
@@ -60,6 +61,21 @@ header, .dropdown-menu-light{
   align-items: flex-end;
 }
 
+.navbar{
+  padding-bottom: 1.2rem;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+.box2{
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.boxx:hover{
+  transform: scale(1.05);
+}
 
 .carrouselll {
   font-size: 15px;
@@ -152,7 +168,7 @@ footer {
 .dondeEstamos, .h1Nosotros, .contacto, .h1Productos, .h2Productos, .masElegidos {
   font-weight: 700;
   font-size: 22px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .listMaps {
@@ -329,13 +345,6 @@ p strong {
   }
   .imgMasElegidos {
     width: 250px;
-  }
-  .box:hover {
-    transform: scale(1.1);
-  }
-  .box2 {
-    transition-property: all;
-    transition-duration: 0.5s;
   }
   .datosFooter {
     display: flex;
