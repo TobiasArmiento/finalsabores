@@ -21,7 +21,7 @@ body{
 }
 
 .logo{
-  width: 20em;
+  width: 17em;
 }
 
 ul li, a{
@@ -77,13 +77,54 @@ header, .dropdown-menu-light{
   transform: scale(1.05);
 }
 
+.containerProductos{
+  position: relative;
+  width: 100%;
+}
+
+.containerProductos .imgProductos{
+  width: 315px;
+  height: 300px;
+}
+
+.containerProductos .btnProductos{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 55px 20px 55px 20px;
+  background-color: rgba(255,255,255,.8);
+}
+
+.textProductos{
+  font-size: 15px;
+  width: 200px;
+  color: #304642;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+.bttnProductos{
+  font-size: 13px;
+  background-color: #F27141;
+  color: white;
+}
+
+.inspiramos{
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 .carrouselll {
   font-size: 15px;
 }
 
-.shipping, .shopping, .card, .nuestrosProductos, .textProductos {
+.shipping, .shopping, .card, .inspiramos{
   color: #304642;
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 30px;
   border: none;
 }
@@ -104,14 +145,14 @@ h1, h2 {
   color: #F27141;
 }
 
-.conoceProductos, .imgElegidos {
+.imgElegidos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.imgProductos, .imgMasElegidos {
+.imgMasElegidos {
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -119,9 +160,8 @@ h1, h2 {
 }
 
 h3 {
-  font-size: large;
   margin-top: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   color: #304642;
 }
 
