@@ -63,6 +63,7 @@ header, .dropdown-menu-light{
 
 .navbar{
   padding-bottom: 1.2rem;
+  margin-right: 5px;
 }
 
 .box:hover {
@@ -120,6 +121,38 @@ ul {
 
 .d-blockk{
   display: none;
+}
+
+header{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.navFija::after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: ' ';
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.navFija{
+  width: 100%;
+  background-color: #f8f9fa;
+  position: fixed;
+}
+
+.listaHeader, .navHeader{
+  background-color: #f8f9fa;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  z-index: 0;
 }
 
 .carrouselll {
@@ -228,7 +261,7 @@ footer {
   padding-top: 80px;
 }
 
-.imgFabrica, .imgNosotros {
+.imgFabrica{
   border: 1px solid #304642;
 }
 
@@ -294,7 +327,9 @@ p strong {
 }
 
 .container-fluid{
-  color: #304642;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 50px;
 }
 
 @media (min-width: 500px) {

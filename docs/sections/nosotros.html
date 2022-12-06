@@ -9,67 +9,67 @@
 </head>
 <body>
     <header>
-        <div class="listaHeader">
-            <a class="indexImg box box2" href="../index.html">
-                <img class="logo" src="../img/logosabores.jpg" alt="Logo empresa Sabores Creativos">
-            </a>
-            <nav>
-                <ul>
-                    <li class="listaPrincipal box box2">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <div class="dropdown box box2">
-                        <a href="../index.html#conocer">Productos</a>
-                        <button class="buttonProductos dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li class="dropdown-item box box2"><a href="../sections/productos/uso-industrial.html">Uso Industrial</a></li>
-                                <li class="dropdown-item box box2"><a href="../sections/productos/reposteria.html">Repostería/Uso Doméstico</a></li>
-                                <li class="dropdown-item box box2"><a href="../sections/productos/altas-temperaturas.html">Altas Temperaturas</a></li>
-                                <li class="dropdown-item box box2"><a href="../sections/productos/otros.html">Otros</a></li>
+        <div class="navFija">
+            <div class="listaHeader">
+                <div>
+                    <a class="box box2" href="../index.html">
+                        <img class="logo boxx box2" src="../img/logosabores.jpg" alt="Logo empresa Sabores Creativos">
+                    </a>
+                </div>
+                <nav class="navHeader">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg p-4">
+                            <ul class="listaPrincipal">
+                                <li class=" box box2">
+                                    <a href="../index.html">Inicio</a>
+                                </li>
+                                <div class="box box2">
+                                    <a class="dropdown-toggle" href="#conocer" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li class="dropdown-item box box2"><a href="../sections/productos/uso-industrial.html">Uso Industrial</a></li>
+                                            <li class="dropdown-item box box2"><a href="../sections/productos/reposteria.html">Repostería/Uso Doméstico</a></li>
+                                            <li class="dropdown-item box box2"><a href="../sections/productos/altas-temperaturas.html">Altas Temperaturas</a></li>
+                                            <li class="dropdown-item box box2"><a href="../sections/productos/otros.html">Otros</a></li>
+                                        </ul>
+                                </div>
+                                <li class=" box box2">
+                                    <a href="../sections/donde estamos.html">Donde Estamos</a>
+                                </li>
+                                <li class=" box box2">
+                                    <a href="../sections/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class=" box box2">
+                                    <a href="../sections/contacto.html">Contacto</a>
+                                </li>
                             </ul>
+                                <div class="container-fluid">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Buscar Producto" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg></button>
+                                    </form>
+                                </div>
+                        </div>
                     </div>
-                    <li class="listaPrincipal box box2">
-                        <a href="../sections/donde estamos.html">Donde Estamos</a>
-                    </li>
-                    <li class="listaPrincipal box box2">
-                        <a href="../sections/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="listaPrincipal box box2">
-                        <a href="../sections/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form action="">
-                    <input class="buscador" type="search" placeholder="Buscar Producto">
-                    <button>
-                        <svg class="svgBuscador" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                          </svg>
-                    </button>
-                </form>
-            </nav>
+                    <nav class="navbar navbar-light">
+                        <div id="hamburger" class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <h1 class="h1Nosotros">Quiénes Somos</h1>
         <div class="nosotros">
-            <img class="imgNosotros" src="" alt="">
+            <img class="imgNosotros" src="../img/nosotros.jpg" alt="laboratorio quimico">
             <p class="parrafoNosotros"> <strong> Sabores Creativos</strong> nuestra <strong>Empresa Argentina</strong>, dedicada al desarrollo de Saborizantes y Aditivos para la Industria Alimenticia como así también Fragancias para la industria de cosméticos en general. Nuestra filosofía de trabajo, esta basada en la confiabilidad, calidad y creatividad lo cual nos ha permitido desarrollar con excelencia cada uno de los objetivos propuestos, logrando asì ser parte de la cadena de producción de nuestros clientes; en consecuencia nos enorgullece compartir el éxito entre proveedor y cliente, resaltando que la privacidad comercial nos destaca como empresa de servicios. Confiamos en que nos brinde la posibilidad de conocernos y así ser parte del staff de proveedores de su empresa, descontando que encontrará en nosotros una propuesta optima en cuanto a precios, calidad de nuestros productos y en la capacidad de nuestro personal de laboratorio para el desarrollo de productos basados en vuestros requerimientos específicos.</p>
         </div>
     </main>
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="../img/nosotros.jpg" class="imgNosotros img-fluid rounded-start" alt="laboratorio quimico">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
     <footer>
         <div class="datosFooter">
             <section class="sectionFooter">
