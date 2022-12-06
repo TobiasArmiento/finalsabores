@@ -66,43 +66,65 @@
     </header>
     <main>
         <h2 class="contacto">Contacto</h2>
-        <section class="cuerpoContacto">
-            <div class="todoContacto">
-                <form class="formularioContacto" action="">
-                    <div class="nombreApellido">
-                        <label class="nombreApellido1" for="nombre-apellido">Nombre y Apellido</label>
-                        <input class="nombreApellido2" type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Fabian Armiento" required>
-                    </div>
-                    <div class="nombreApellido">
-                        <label class="nombreApellido1" for="correo-electronico">Correo Electronico</label>
-                        <input class="nombreApellido2" type="email" name="correo-electronico" id="correo-electronico" placeholder="ejemplo@tuEmail.com" required>
-                    </div>
-                    <div class="nombreApellido">
-                        <label class="rubro1" for="Rubro/Uso">Rubro/Uso</label>
-                        <input class="rubro2" type="text" id="Rubro/Uso" placeholder="Rubro/Uso" required>
-                    </div>
-                    <div class="nombreApellido">
-                        <label class="tipo1" for="Tipo">Tipo</label>
-                        <select class="tipo2" name="Tipo" id="Tipo">
-                                <option value="industrial">Industrial</option>
-                                <option value="mayorista">Mayorista</option>
-                                <option value="minorista">Minorista</option>
-                        </select>
-                    </div>
-                    <div class="nombreApellido">
-                        <label class="celular1" for="numeroCelular">Tel/Celular</label>
-                        <input class="celular2" type="tel" id="numeroCelular" placeholder="+5491123456789" maxlength="50" required>
-                    </div>
-                    <div class="textoArea">
-                        <textarea class="textoArea1" name="" id="" cols="50" rows="10" required ></textarea>
-                    </div>
-                    <div class="verificacion">
-                        <label class="verificacion" for="verificacion">No soy un robot</label>
-                        <input class="enviar" type="checkbox" name="verificacion" value="si">
-                    </div>
-                    <input class="enviar" type="submit" value="Enviar"></label>
-                </form>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationServer01" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Fabian Armiento" required>
+                <div class="valid-feedback">
+                Correcto!
             </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Correo Electrónico</label>
+                <input type="email" name="correo-electronico" class="form-control is-valid" id="validationServer02" placeholder="ejemplo@tuEmail.com" required>
+                <div class="valid-feedback">
+                Correcto!
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServer03" class="form-label">Rubro / Tipo de Uso</label>
+                <input type="text" name="rubro" class="form-control is-valid" id="validationServer02" placeholder="Repostería" required>
+                <div class="valid-feedback">
+                Correcto!
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer01" class="form-label">Tipo</label>
+            <select name="tipo" type="text" class="form-control is-valid" id="validationServer01" required>
+                <option>Industrial</option>
+                <option>Mayorista</option>
+                <option>Minorista</option>
+            </select>
+            <div class="valid-feedback">
+                Correcto!
+                </div>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+                Please select a valid state.
+            </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer01" class="form-label">Tel / Celular</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="+541123456789" required>
+                <div class="valid-feedback">
+                Correcto!
+            </div>
+            </div>
+            <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
             <div class="contactoExtra">
                 <div class="logoNumero">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -128,8 +150,9 @@
                         </li>
                     </nav>
                 </div>
-                <small class="logoNumero">Horarios de atención: De Lunes a Viernes de 09:00 hs. a 17:00hs.</small>
-            </div>
+                <div class="smallNumero">
+                <small>Horarios de atención: De Lunes a Viernes de 09:00 hs. a 17:00hs.</small>
+                </div>
         </section>
     </main>
     <footer>
