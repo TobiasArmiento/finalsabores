@@ -418,6 +418,10 @@ p strong {
   display: none;
 }
 
+.precipitadoPc{
+  display: none;
+}
+
 @media (min-width: 500px) {
   header {
     grid-area: header;
@@ -494,6 +498,10 @@ p strong {
   .containerProductos .btnProductos{
     width: 80%;
     padding: 125px 80px 125px 80px;
+  }
+
+  .imgMasElegidos{
+    width: 300px;
   }
 
 }
@@ -574,7 +582,46 @@ p strong {
     .cardProductos{
       width: 450px;
     }
+    .card-title{
+      font-size: 17px;
+    }
+    #container-productos{
+      display: flex;
+    }
+    .precipitadoPhone{
+      display: none;
+    }
+    .precipitadoPc{
+      display: flex;
+      width: 350px;
+    }
+    #container-productos {
+      display: flex;
+      margin-top: 100px;
+      justify-content: center;
+    }
+    .precipitadoPc {
+      display: flex;
+      width: 50%;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: 0.25rem;
+      margin: 10px;
+    }
+    .textProductos{
+      font-size: 18px;
+    }
+    .bttnProductos{
+      font-size: 15px;
+      color: white;
+    }
+    .shipping, .shopping, .card, .inspiramos, .h3-elegidos{
+      font-size: 15px;
   }
+  .imgMasElegidos{
+    margin: 10px;
+  }
+
+}
 
 @media (min-width: 1216px) {
   body {
