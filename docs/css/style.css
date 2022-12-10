@@ -397,11 +397,10 @@ p strong {
 }
 
 .h2-productos{
-  margin-top: 80px;
-  margin-bottom: 50px;
   font-size: 22px;
   font-weight: 700;
   color: #F27141;
+  margin: 80px 10px 50px 10px;
 }
 
 .card-title{
