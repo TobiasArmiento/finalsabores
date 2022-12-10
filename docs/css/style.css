@@ -255,11 +255,6 @@ footer {
   list-style-type: none;
 }
 
-.fabricaRetiro {
-  font-size: 19px;
-  margin-top: 50px;
-}
-
 .puntoRetiro {
   padding-top: 80px;
 }
@@ -278,12 +273,12 @@ footer {
 }
 
 .imgNosotros {
-  width: 350px;
+  width: 300px;
 }
 
 .parrafoNosotros {
   margin-top: 20px;
-  width: 300px;
+  width: 260px;
   font-size: 10px;
   color: #304642;
 }
@@ -396,7 +391,7 @@ p strong {
   align-items: center;
 }
 
-.h2-productos{
+.h2-productos, .fabricaRetiro{
   font-size: 22px;
   font-weight: 700;
   color: #F27141;
@@ -413,6 +408,14 @@ p strong {
 .table{
   margin: 20px;
   width: 90%;
+}
+
+.googleMaps{
+  font-size: 10px;
+}
+
+.frasco-pc{
+  display: none;
 }
 
 @media (min-width: 500px) {
@@ -448,14 +451,54 @@ p strong {
 
   .mapsFabrica {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
   }
+
   .carrouselll {
     font-size: 25px;
   }
+
+  .paragraph-productos{
+    width: 90%;
+    height: 80%;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .h1-productos{
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  .navProductos, .paragraphProductos, .iframeFabrica, .imgNosotros, .textProductos{
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .parrafoNosotros{
+    text-align: initial;
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .row, .btn-primary{
+    font-size: 13px;
+  }
+
+  .containerProductos .imgProductos {
+    width: 100%;
+    height: 100%;
+  }
+
+  .containerProductos .btnProductos{
+    width: 80%;
+    padding: 125px 80px 125px 80px;
+  }
+
 }
-@media (min-width: 645px) {
+
+@media (min-width: 665px) {
   .nosotros {
     flex-direction: row;
     justify-content: space-around;
@@ -477,8 +520,63 @@ p strong {
   .tipo1, .tipo2 {
     margin: 5px 50px 5px 15px;
   }
-}
-@media (min-width: 918px) {
+  .datosImportantes{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .containerProductos{
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .containerProductos .imgProductos{
+    width: 50%;
+    height: 50%;
+  }
+
+  .containerProductos .btnProductos{
+    width: 50%;
+    padding: 0;
+    position: initial;
+    transform: none;
+  }
+
+  .containerProductos .imgProductos {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 300px;
+    margin-right: 20px;
+  }
+
+  .frascoPhone{
+    display: none;
+  }
+  .frasco-pc{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    }
+
+  .containerProductos{
+    position: unset;
+    display: block;
+    }
+
+  .paragraph-productos{
+    height: 325px;
+    margin-top: -50px;
+    width: 90%;
+    }
+    .cardProductos{
+      width: 450px;
+    }
+  }
+
+@media (min-width: 1216px) {
   body {
     grid-template-areas: "header" "imgEmpresa" "datosImportantes" "nuestrosProductos" "conoceProductos" "conoceProductos" "imgElegidos" "footer";
   }
@@ -582,4 +680,39 @@ p strong {
   .carrouselll {
     font-size: 30px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+  .navProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cardProductos{
+    margin: 10px;
+  }
+
+  .frasco-pc{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .containerProductos{
+    position: unset;
+    display: block;
+  }
+
+  .paragraph-productos{
+    height: 500px;
+    margin-top: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 50%;
+  }
+  .h1-productos {
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  .paragraphProductos{
+    font-size: 18px;
+  }
+}
