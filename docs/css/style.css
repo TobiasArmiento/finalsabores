@@ -204,7 +204,8 @@ h3 {
 }
 
 footer {
-  background-color: #e8a15f;
+  background-color: #f4813a;
+  background-image: linear-gradient(43deg, #f4813a 0%, #e8a15f 46%, #f4813a 100%);
   margin-top: 150px;
 }
 
@@ -261,15 +262,6 @@ footer {
 
 .iframeFabrica{
   border: 1px solid #304642;
-}
-
-.listMaps:hover {
-  transform: scale(1.2);
-}
-
-.listMaps2 {
-  transition-property: all;
-  transition-duration: 0.5s;
 }
 
 .imgNosotros {
@@ -410,6 +402,10 @@ p strong {
   display: none;
 }
 
+.sectionFooter {
+  width: 100%;
+  }
+
 @media (min-width: 500px) {
   header {
     grid-area: header;
@@ -494,7 +490,7 @@ p strong {
 
 }
 
-@media (min-width: 665px) {
+@media (min-width: 665px){
   .nosotros {
     flex-direction: row;
     justify-content: space-around;
@@ -503,11 +499,7 @@ p strong {
     width: 280px;
     font-size: 9px;
   }
-  .cuerpoContacto {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .datosImportantes{
+  .cuerpoContacto, .datosImportantes {
     display: flex;
     justify-content: space-evenly;
   }
@@ -596,16 +588,37 @@ p strong {
     .shipping, .shopping, .card, .inspiramos, .h3-elegidos{
       font-size: 15px;
   }
-  .imgMasElegidos{
+  .imgMasElegidos, .col-12{
     margin: 10px;
   }
-
-  .listaPrincipal{
+  .listaPrincipal, .dropdown-item{
     font-size: 13px;
   }
   .form-control {
     padding: 8px;
-
+  }
+  .form-contacto{
+    display: flex;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .col-md-4{
+    width: 100%;
+  }
+  .textoArea{
+    display: block;
+    width: 50%;
+  }
+  .textoArea1{
+    width: 100%;
+    margin-top: 25px;
+  }
+  .googleMaps{
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 870px){
@@ -646,9 +659,6 @@ p strong {
   form {
     margin-bottom: 22px;
   }
-  .copyright {
-    padding-right: 110px;
-  }
   .imgFabrica, .imgRetiro {
     width: 400px;
     border: 1px solid #304642;
@@ -680,12 +690,6 @@ p strong {
   }
   .contactoExtra {
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .listMaps {
-    margin: -15px;
   }
   .carrouselll {
     font-size: 30px;
@@ -733,18 +737,12 @@ p strong {
   .mapsFabrica iframe{
     height: 600px;
   }
+  .listMaps {
+    list-style-type: none;
+  }
+  .svg-datos{
+    width: 100px;
+    height: 100px;
+  }
 
-  #validationServer02{
-    width: 377.33%;
-}
-.form-contacto{
-  display: flex;
-  flex-direction: column;
-}
-.row{
-  display: flex;
-}
-.textoArea{
-
-}
 }
