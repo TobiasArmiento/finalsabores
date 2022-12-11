@@ -299,18 +299,6 @@ p strong {
   width: 250px;
 }
 
-.nombreApellido, .nombreApellido1, .nombreApellido2, .textoArea {
-  margin: 5px 20px 10px 5px;
-}
-
-.rubro1, .rubro2, .celular1, .celular2 {
-  margin: 5px 39px 5px 25px;
-}
-
-.tipo1, .tipo2 {
-  margin: 5px 79px 5px 16px;
-}
-
 .verificacion {
   margin: 5px;
 }
@@ -519,15 +507,6 @@ p strong {
     display: flex;
     justify-content: space-evenly;
   }
-  .nombreApellido, .nombreApellido1, .nombreApellido2, .textoArea {
-    margin: 5px;
-  }
-  .rubro1, .rubro2, .celular1, .celular2 {
-    margin: 5px 10px 5px 25px;
-  }
-  .tipo1, .tipo2 {
-    margin: 5px 50px 5px 15px;
-  }
   .datosImportantes{
     display: flex;
     justify-content: space-evenly;
@@ -621,13 +600,24 @@ p strong {
     margin: 10px;
   }
 
+  .listaPrincipal{
+    font-size: 13px;
+  }
+  .form-control {
+    padding: 8px;
+
+}
+
+@media (min-width: 870px){
+  .carrouselPhone{
+    display: none;
+  }
+  .carrouselPc{
+    display: flex;
+  }
 }
 
 @media (min-width: 1216px) {
-  body {
-    grid-template-areas: "header" "imgEmpresa" "datosImportantes" "nuestrosProductos" "conoceProductos" "conoceProductos" "imgElegidos" "footer";
-  }
-
   .datosImportantes {
     display: grid;
     justify-items: center;
@@ -637,22 +627,7 @@ p strong {
   .nuestrosProductos {
     margin-bottom: 5em;
   }
-  .navProductos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .conoceProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10em;
-  }
-  .imgProductos {
-    border: 3px solid #304642;
-  }
-  .imgMasElegidos {
-    width: 250px;
-  }
+
   .datosFooter {
     display: flex;
     justify-content: space-between;
@@ -683,37 +658,25 @@ p strong {
     margin-bottom: 100px;
   }
   .fabricaRetiro {
-    margin-top: -70px;
+    margin-top: 80px;
     font-size: 27px;
   }
   .dondeEstamos, .h1Nosotros, .contacto {
     font-size: 30px;
   }
   .imgNosotros {
-    width: 445px;
+    width: 565px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
   }
   .parrafoNosotros {
-    font-size: 12px;
+    font-size: 14px;
     width: 420px;
     text-align: start;
   }
   .cuerpoContacto {
     display: flex;
     flex-direction: row;
-  }
-  .formularioContacto, .nombreApellido {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .rubro1, .rubro2, .celular1, .celular2 {
-    margin: 5px 10px 5px 0px;
-  }
-  .tipo1, .tipo2 {
-    margin: 5px 50px 5px 0px;
-  }
-  .rubro2, .tipo2, .nombreApellido2, .celular2, .textoArea1 {
-    width: 350px;
   }
   .contactoExtra {
     font-size: 15px;
@@ -762,4 +725,26 @@ p strong {
   .paragraphProductos{
     font-size: 18px;
   }
+
+  tbody{
+    font-size: 13px;
+  }
+
+  .mapsFabrica iframe{
+    height: 600px;
+  }
+
+  #validationServer02{
+    width: 377.33%;
+}
+.form-contacto{
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+}
+.textoArea{
+
+}
 }
