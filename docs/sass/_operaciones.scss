@@ -1,0 +1,43 @@
+/*Variables*/
+$fondo:blanco;
+
+.navHeader, .listaHeader{
+        @if $fondo == negro{
+            background-color: black;
+        }
+        @else if $fondo == blanco{
+            background-color: #f8f9fa;
+        }
+        @else {
+            background-color: yellow;
+        }
+}
+
+/*Extend*/
+.shipping{
+    color: #304642;
+    font-size: 12px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.shopping, .card, .inspiramos{
+    @extend .shipping;
+}
+
+/*Mixin*/
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width; 
+}
+
+.containerProductos .imgProductos{
+    @include sizes (315px, 300px);
+}
+
+@media (min-width: 500px){
+    .containerProductos .imgProductos{
+        @include sizes (100%, 100%)
+    }
+}

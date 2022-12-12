@@ -1,0 +1,11 @@
+.box:hover {
+    transform: scale(1.1);
+}
+.box2{
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.boxx:hover{
+    transform: scale(1.05);
+}
