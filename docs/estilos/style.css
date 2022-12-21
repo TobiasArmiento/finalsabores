@@ -74,6 +74,10 @@ header .listaPrincipal {
   border-color: black;
 }
 
+.logo {
+  width: 17em;
+}
+
 @media (min-width: 500px) {
   .listaHeader {
     grid-area: listaHeader;
@@ -147,10 +151,11 @@ h1, h2 {
   .dondeEstamos, .h1Nosotros, .contacto, .h1Productos, .h2Productos, .masElegidos {
     font-size: 30px;
   }
+  .logo {
+    width: 20em;
+  }
 }
-.logo {
-  width: 17em;
-}
+
 
 .btn-outline-success {
   color: #F27141;
