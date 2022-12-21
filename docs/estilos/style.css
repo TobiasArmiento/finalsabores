@@ -648,6 +648,12 @@ p strong {
   .carrouselPc {
     display: flex;
   }
+  .mapsFabrica {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
 }
 @media (min-width: 1216px) {
   .datosImportantes {
